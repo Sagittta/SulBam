@@ -1,9 +1,7 @@
 package kr.hs.emirim.sagittta.sulbam;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -29,18 +27,22 @@ import android.widget.Toast;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
+import org.w3c.dom.Text;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 
 public class AccountsSettingsActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE = 0;
     private ImageView profile;
     private TextView name;
+    private TextView id;
+    private TextView age;
+    private TextView gender;
+    private TextView email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,17 @@ public class AccountsSettingsActivity extends AppCompatActivity {
 
         profile = (ImageView) findViewById(R.id.profile);
         name = (TextView) findViewById(R.id.name);
+        id = (TextView) findViewById(R.id.id);
+        age = (TextView) findViewById(R.id.age);
+        gender = (TextView) findViewById(R.id.gender);
+        email = (TextView) findViewById(R.id.email);
+
+        // 정보 화면에 나오게 하기
+        name.setText("홍길동");
+        id.setText("s2018w01");
+        age.setText("18");
+        gender.setText("여자");
+        email.setText("s2018w01@e-mirim.hs.kr");
 
         // 프로필 원형으로 만들기
         profile.setBackground(new ShapeDrawable(new OvalShape()));
@@ -56,6 +69,5 @@ public class AccountsSettingsActivity extends AppCompatActivity {
             profile.setClipToOutline(true);
         }
 
-        name.setText("홍길동");
     }
 }
