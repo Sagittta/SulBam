@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
+        app:layout_constraintGuide_percent="0.7004104" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -112,7 +112,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
-        android:text="로그인을 하세요"
+        android:text="로그인이 필요합니다"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -121,36 +121,41 @@
         app:layout_constraintTop_toBottomOf="@+id/profile" />
 
     <Button
-        android:id="@+id/id"
+        android:id="@+id/idButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/button"
         android:drawableLeft="@drawable/user"
         android:drawablePadding="15dp"
         android:text="아이디"
         android:textAlignment="viewStart"
         android:textColor="#646464"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline2"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/pwd"
+        android:id="@+id/pwdButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/button"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/edit"
+        android:drawableRight="@drawable/arrow"
         android:drawablePadding="15dp"
         android:text="비밀번호 확인"
         android:textAlignment="viewStart"
         android:textColor="#646464"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -159,17 +164,19 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/age"
+        android:id="@+id/ageButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/button"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/age"
         android:drawablePadding="15dp"
         android:text="나이"
         android:textAlignment="viewStart"
         android:textColor="#646464"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -178,36 +185,40 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/gender"
+        android:id="@+id/genderButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/button"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/gender"
         android:drawablePadding="15dp"
         android:text="성별"
         android:textAlignment="viewStart"
         android:textColor="#646464"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline5"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/email"
+        android:id="@+id/emailButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/button"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/message"
         android:drawablePadding="15dp"
         android:text="이메일"
         android:textAlignment="viewStart"
         android:textColor="#646464"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -216,22 +227,70 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/secession"
+        android:id="@+id/secessionButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/button"
-        android:drawableLeft="@drawable/user"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"
+
+        android:drawableLeft="@drawable/cancel"
+        android:drawableRight="@drawable/arrow"
         android:drawablePadding="15dp"
         android:text="탈퇴하기"
         android:textAlignment="viewStart"
         android:textColor="#646464"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline7"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="아이디임"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="나이임"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="성별임"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="이메일임"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
