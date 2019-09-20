@@ -19,6 +19,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -43,6 +44,7 @@ public class AccountsSettingsActivity extends AppCompatActivity {
     private TextView age;
     private TextView gender;
     private TextView email;
+    private Button pwdButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,7 @@ public class AccountsSettingsActivity extends AppCompatActivity {
         age = (TextView) findViewById(R.id.age);
         gender = (TextView) findViewById(R.id.gender);
         email = (TextView) findViewById(R.id.email);
+        pwdButton = (Button) findViewById(R.id.pwdButton);
 
         // 정보 화면에 나오게 하기
         name.setText("홍길동");
@@ -62,6 +65,14 @@ public class AccountsSettingsActivity extends AppCompatActivity {
         age.setText("18");
         gender.setText("여자");
         email.setText("s2018w01@e-mirim.hs.kr");
+
+        pwdButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast toast = Toast.makeText(AccountsSettingsActivity.this, "간단한 토스트메시지", Toast.LENGTH_SHORT );
+                toast.show();
+            }
+        });
 
         // 프로필 원형으로 만들기
         profile.setBackground(new ShapeDrawable(new OvalShape()));
