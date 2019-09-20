@@ -8,77 +8,75 @@
     tools:context=".AccountsSettingsActivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/hj_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.10123119" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/hj_guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/hj_guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.500684" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/hj_guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.6" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
+        android:id="@+id/hj_guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.7004104" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/hj_guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.8" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
+        android:id="@+id/hj_guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
 
     <FrameLayout
-        android:id="@+id/firstLayout"
+        android:id="@+id/top"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#3D1458"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </FrameLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/bgColor"
+        android:id="@+id/hj_bgColor"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/main_background"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/hj_guideline"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -86,10 +84,10 @@
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/hj_guideline"
         app:srcCompat="@color/colorAccent" />
 
     <ImageView
@@ -115,7 +113,7 @@
         android:text="로그인이 필요합니다"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile" />
@@ -127,18 +125,18 @@
         android:layout_height="0dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:background="@drawable/account_button"
         android:drawableLeft="@drawable/user"
         android:drawablePadding="15dp"
         android:text="아이디"
         android:textAlignment="viewStart"
         android:textColor="#646464"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/hj_guideline2"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -148,7 +146,7 @@
         android:layout_height="0dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:background="@drawable/account_button"
         android:drawableLeft="@drawable/edit"
         android:drawableRight="@drawable/arrow"
         android:drawablePadding="15dp"
@@ -156,11 +154,11 @@
         android:textAlignment="viewStart"
         android:textColor="#646464"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/hj_guideline3"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -170,18 +168,18 @@
         android:layout_height="0dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:background="@drawable/account_button"
         android:drawableLeft="@drawable/age"
         android:drawablePadding="15dp"
         android:text="나이"
         android:textAlignment="viewStart"
         android:textColor="#646464"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/hj_guideline4"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -191,18 +189,18 @@
         android:layout_height="0dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:background="@drawable/account_button"
         android:drawableLeft="@drawable/gender"
         android:drawablePadding="15dp"
         android:text="성별"
         android:textAlignment="viewStart"
         android:textColor="#646464"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/hj_guideline5"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -212,18 +210,18 @@
         android:layout_height="0dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:background="@drawable/account_button"
         android:drawableLeft="@drawable/message"
         android:drawablePadding="15dp"
         android:text="이메일"
         android:textAlignment="viewStart"
         android:textColor="#646464"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/hj_guideline6"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -246,7 +244,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/hj_guideline7"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -256,9 +254,9 @@
         android:layout_marginEnd="24dp"
         android:text="아이디임"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/hj_guideline2" />
 
     <TextView
         android:id="@+id/age"
@@ -267,9 +265,9 @@
         android:layout_marginEnd="24dp"
         android:text="나이임"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintTop_toTopOf="@+id/hj_guideline5" />
 
     <TextView
         android:id="@+id/gender"
@@ -278,9 +276,9 @@
         android:layout_marginEnd="24dp"
         android:text="성별임"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+        app:layout_constraintTop_toTopOf="@+id/hj_guideline6" />
 
     <TextView
         android:id="@+id/email"
@@ -289,8 +287,8 @@
         android:layout_marginEnd="24dp"
         android:text="이메일임"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintBottom_toTopOf="@+id/hj_guideline6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+        app:layout_constraintTop_toTopOf="@+id/hj_guideline7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
