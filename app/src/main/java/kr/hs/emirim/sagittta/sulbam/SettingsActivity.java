@@ -38,8 +38,8 @@ public class SettingsActivity extends AppCompatActivity {
                     break;
                 case R.id.accountImg:
                 case R.id.accountTitle:
-                 //   Intent intent = new Intent(getApplicationContext(), AccountSettingsActivity.class);
-                 //   startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), AccountsSettingsActivity.class);
+                    startActivity(intent);
                     break;
             }
         }
