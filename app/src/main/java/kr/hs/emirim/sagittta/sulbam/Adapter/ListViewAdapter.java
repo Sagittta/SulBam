@@ -2,6 +2,9 @@ package kr.hs.emirim.sagittta.sulbam.Adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,6 +64,11 @@ public class ListViewAdapter extends BaseAdapter {
             }
         });
 
+        // 프로필 원형으로 만들기
+        image.setBackground(new ShapeDrawable(new OvalShape()));
+        if(Build.VERSION.SDK_INT >= 21) {
+            image.setClipToOutline(true);
+        }
 
         return convertView;
     }
