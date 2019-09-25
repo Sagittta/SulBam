@@ -1,9 +1,12 @@
 package kr.hs.emirim.sagittta.sulbam;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import kr.hs.emirim.sagittta.sulbam.Adapter.ListViewAdapter;
 
+import android.graphics.drawable.GradientDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -11,6 +14,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MapActivity extends AppCompatActivity {
@@ -18,6 +22,8 @@ public class MapActivity extends AppCompatActivity {
     private ListView listView;
     private ListViewAdapter adapter;
     private WebView webView;
+    private ImageView imgView;
+    private GradientDrawable drawable;
 
     private int[] img = {R.drawable.one,R.drawable.two,R.drawable.three, R.drawable.four};
     private String[] Title = {"지민이와 사랑에 빠진 개구리","탈미림_부자","집가자 얘들아", "지민이 세컨드"};
@@ -25,6 +31,7 @@ public class MapActivity extends AppCompatActivity {
             "ゃんありがとうござざいまし~~~§★♥＊§","야시장 가지말고 집 가라\n" +
             "발 닦고 잠이나 자라", "웅냥냥힝냐링~"};
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +39,8 @@ public class MapActivity extends AppCompatActivity {
 
         listView = (ListView)findViewById(R.id.listView);
         webView = (WebView)findViewById(R.id.webView);
+        imgView = (ImageView)findViewById(R.id.bgImg);
+        drawable = (GradientDrawable)getApplicationContext().getDrawable(R.drawable.bg_rounding);
 
         adapter = new ListViewAdapter();    //변수 초기화
         listView.setAdapter(adapter);   //어댑터 할당
@@ -40,6 +49,9 @@ public class MapActivity extends AppCompatActivity {
         webView.loadUrl("https://www.google.com/maps/?hl=ko");
         webView.setWebChromeClient(new WebChromeClient());  //웹뷰에서 크롬 실행이 가능하도록 설정
         webView.setWebViewClient(new WebViewClientClass());
+
+        imgView.setBackground(drawable);
+        imgView.setClipToOutline(true);
 
         //adapter를 통한 값 전달
         for(int i=0; i<img.length;i++){

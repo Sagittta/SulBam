@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/menu1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -35,7 +35,7 @@
         android:layout_marginTop="16dp"
         android:padding="2dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/menu1"
         app:srcCompat="@drawable/language" />
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="2dp"
-        android:text="언어 설정"
+        android:text="@string/langTitle"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/langContext"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="2dp"
-        android:text="현재 사용되고 있는 언어는 한국어입니다."
+        android:text="@string/langContext"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/langImg"
         app:layout_constraintStart_toEndOf="@+id/langImg"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/langImg" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/menu2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:text="계정을 사용하시면 후기를 남길 수 있습니다."
+        android:text="@string/accountUseContext"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accountUseTitle" />
@@ -106,11 +106,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="계정 사용"
+        android:text="@string/accountUseTitle"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/menu2" />
 
     <Switch
         android:id="@+id/accountSwitch"
@@ -119,6 +119,11 @@
         android:layout_marginEnd="16dp"
         android:track="@drawable/switch_track_selector"
         android:thumb="@drawable/switch_thumb_selector"
+        android:switchMinWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:checked="true"
+        android:thumbTextPadding="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/accountUseContext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/accountUseTitle" />
@@ -139,7 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="계정 설정"
+        android:text="@string/accountTitle"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/accountImg"
