@@ -25,9 +25,9 @@
                     android:layout_width="32sp"
                     android:layout_height="30sp"
                     android:layout_marginStart="24dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView"
-                    app:layout_constraintStart_toEndOf="@+id/textView"
-                    app:layout_constraintTop_toTopOf="@+id/textView"
+                    app:layout_constraintBottom_toBottomOf="@+id/placeTitle"
+                    app:layout_constraintStart_toEndOf="@+id/placeTitle"
+                    app:layout_constraintTop_toTopOf="@+id/placeTitle"
                     app:srcCompat="@drawable/placeholder" />
 
                 <ImageView
@@ -41,7 +41,7 @@
                     android:tint="#66000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/placeContext"
                     app:srcCompat="@drawable/runwaymarket" />
 
                 <TextView
@@ -54,36 +54,38 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/place"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="DDP"
+                    android:text="@string/place"
                     android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView"
+                    app:layout_constraintBottom_toBottomOf="@+id/placeTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
-                    app:layout_constraintTop_toTopOf="@+id/textView" />
+                    app:layout_constraintTop_toTopOf="@+id/placeTitle" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/placeContext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="서울밤도깨비야시장"
+                    android:text="@string/placeContext"
                     android:textColor="#797979"
                     android:textSize="24sp"
-                    app:layout_constraintStart_toStartOf="@+id/textView"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+                    app:layout_constraintStart_toStartOf="@+id/placeTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/placeTitle" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/placeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="24dp"
-                    android:text="청춘 런웨이 마켓"
+                    android:text="@string/placeTitle"
                     android:textColor="#000000"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginEnd="32dp"
-                    android:text="청춘 런웨이 마켓"
+                    android:text="@string/placeTitle"
                     android:textColor="#FFFFFF"
                     android:textSize="34sp"
                     android:textStyle="bold"
@@ -110,7 +112,7 @@
                     android:id="@+id/textView19"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="서울밤도깨비야시장"
+                    android:text="@string/placeContext"
                     android:textColor="#E2DAFF"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -135,10 +137,8 @@
             <ListView
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp">
-
-            </ListView>
+                android:layout_height="440dp"
+                android:layout_margin="16dp"></ListView>
 
         </LinearLayout>
     </ScrollView>

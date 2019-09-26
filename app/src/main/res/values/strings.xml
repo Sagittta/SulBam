@@ -20,4 +20,8 @@
     <string name="accountUseTitle">계정 사용</string>
     <string name="accountUseContext">계정을 사용하시면 후기를 남길 수 있습니다.</string>
     <string name="accountTitle">계정 설정</string>
+
+    <string name="placeTitle">청춘 런웨이 마켓</string>
+    <string name="placeContext">서울밤도깨비야시장</string>
+    <string name="place">DDP</string>
 </resources>

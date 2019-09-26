@@ -20,4 +20,8 @@
     <string name="accountUseTitle">Use Account</string>
     <string name="accountUseContext">Use your account to leave a review.</string>
     <string name="accountTitle">Account</string>
+
+    <string name="placeTitle">Youth Runway Market</string>
+    <string name="placeContext">Seoul Night Goblin Market</string>
+    <string name="place">DDP</string>
 </resources>
