@@ -3,22 +3,22 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/setLevel"
+            android:id="@+id/showAll"
             android:icon="@drawable/ic_full"
             android:title="전체보기"/>
         <item
-            android:id="@+id/setAlarm"
+            android:id="@+id/showTheme"
             android:icon="@drawable/ic_theme"
             android:title="테마별 보기"/>
     </group>
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/themeSetting"
+            android:id="@+id/ask"
             android:icon="@drawable/ic_theme"
             android:title="문의하기"/>
         <item
-            android:id="@+id/bug_report"
+            android:id="@+id/setting"
             android:icon="@drawable/ic_full"
             android:title="설정"/>
     </group>
